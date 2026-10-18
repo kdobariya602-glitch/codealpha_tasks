@@ -1,0 +1,26 @@
+CODEALPHA TASK 2 — SIMPLE ENGLISH VIDEO SCRIPT
+
+1. TASK 2 OVERVIEW
+This website teaches people how to spot phishing emails, fake websites, social engineering, and online scams. It includes lessons, examples, and a final quiz.
+
+2. OPEN THE WEBSITE
+Extract the ZIP file. Open the project folder. Double-click index.html to open the website in Chrome or Edge. You do not need to install Python for this task.
+
+3. USE THE SIDEBAR
+Use the left menu to move between the dashboard, phishing emails, fake websites, social engineering, and protection tips. Read the examples and look for warning signs.
+
+4. LEARN THE WARNING SIGNS
+Check the sender address, website domain, unexpected attachments, urgent messages, and requests for passwords or payments. Verify unusual requests using a trusted contact method.
+
+5. VIDEO AND RESOURCES
+Open the Video and Resources section. Internet access is needed for remote videos. If an embedded video does not play, use its direct YouTube link or official resource link.
+
+6. TAKE THE QUIZ
+Complete the final assessment. Read the feedback after each answer. Retry questions you missed. The website can store progress in your browser, but it does not sync to other devices.
+
+7. REPORT AND CERTIFICATE
+Use the local report or certificate options if available. These are generated in your browser. The website does not send reports to an organization automatically.
+
+8. IMPORTANT LIMITS
+This is an awareness training website. It does not scan real inboxes, block phishing, send emails, or collect passwords. Use the examples for learning and report real suspicious messages through your organization.
+

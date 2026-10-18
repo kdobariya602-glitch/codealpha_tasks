@@ -1,0 +1,18 @@
+TASK 3 — CODELENS GUIDED SECURE CODING REVIEW
+
+HOW TO RUN
+1. Install Python 3 from https://www.python.org/downloads/windows/ if needed.
+2. Double-click RUN_WEBSITE_WINDOWS.bat.
+3. Wait for Flask to install/start.
+4. Open http://127.0.0.1:5003 in your browser.
+
+WHAT TO DO
+1. Click “Start review”.
+2. Click “Use built-in sample” first (recommended for beginners).
+3. Scroll to “Understand the results”. Click “Explain this” for each warning.
+4. Read what was noticed, why it matters, and how to fix/verify it.
+5. Try the quick practice question.
+6. Click “Download my report”.
+
+IMPORTANT
+This is a beginner educational pattern checker. It reads source as text and does not execute uploaded Python code. It checks only a small set of patterns; findings may be false positives and real issues may be missed. It is not a full security scanner. If your internship has an official task brief, follow that brief first.

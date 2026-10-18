@@ -1,0 +1,26 @@
+CODEALPHA TASK 4 — SIMPLE ENGLISH VIDEO SCRIPT
+
+1. TASK 4 OVERVIEW
+A Network Intrusion Detection System looks for suspicious network activity. This dashboard can display example alerts and parse Suricata EVE JSON logs.
+
+2. RUN THE DASHBOARD
+Extract the ZIP. Double-click RUN_WEBSITE_WINDOWS.bat. Wait for the server to start, then open http://127.0.0.1:5004 in your browser.
+
+3. TRY SAMPLE ALERTS
+Click Load Sample Alerts to understand the table. The example alerts are synthetic. They are not evidence of a real attack or live network monitoring.
+
+4. READ AN ALERT
+Check the timestamp, source, destination, signature, and severity. An alert means the rule matched something; it does not prove that a system was compromised.
+
+5. PARSE EVE JSON
+Paste Suricata EVE JSON in newline-delimited format. Put one complete JSON object on each line. Do not wrap the lines in square brackets or add commas between separate lines.
+
+6. REAL DETECTION
+This dashboard does not capture packets or run Suricata by itself. Install and configure Suricata separately, enable EVE JSON output, and test only on a network or lab you are authorized to monitor.
+
+7. RULES AND RESPONSE
+Tune rules for your environment. Record what triggered the alert, what you checked, whether it was a false positive, and what response was taken. Keep the logs and screenshots as evidence.
+
+8. SUBMISSION TIP
+For the internship report, describe the test environment, configuration, actual alerts observed, response steps, and limitations. If you only used sample data, clearly label it as a demo.
+

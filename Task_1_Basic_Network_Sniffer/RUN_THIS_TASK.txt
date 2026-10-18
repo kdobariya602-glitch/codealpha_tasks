@@ -1,0 +1,45 @@
+CODEALPHA TASK 1 — BASIC NETWORK SNIFFER WEBSITE
+
+The complete Python backend and packet-capture logic are combined in app.py. No separate sniffer Python files are required.
+
+WINDOWS SETUP
+1. Install Python 3.10+ if it is not installed.
+2. Install Npcap from its official website: https://npcap.com/ . Use the default compatible installation options.
+3. Open Command Prompt in this folder.
+4. Install dependencies:
+   py -m pip install -r requirements.txt
+5. Start the local website:
+   py app.py
+6. Keep this Command Prompt window open. It should show:
+   Running on http://127.0.0.1:5001
+7. Open Chrome/Edge and visit:
+   http://127.0.0.1:5001/
+8. If packet capture fails with a permission/interface error, close the server with Ctrl+C and reopen Command Prompt using Run as administrator, then run py app.py again.
+
+HOW TO TEST
+1. Select packet limit (for example 50).
+   For a UI preview without live capture, click Load sample data. Sample rows are clearly simulated and are not real network traffic.
+2. Leave Capture Filter blank for a general test (captures all packets). Optional filters include `tcp`, `udp`, `port 53`, or `host 192.168.1.1`.
+3. Click Start capture.
+4. Generate ordinary network activity in another browser tab (visit a few websites you are allowed to access).
+5. The packet table and statistics should update automatically every 2 seconds.
+6. Use Search and Protocol to filter displayed rows.
+7. Stop capture, then use Export CSV to save the observed records.
+8. Clear results resets the table when capture is stopped.
+
+BUTTONS
+- Start capture: starts a background packet capture and streams records into the dashboard.
+- Stop: requests the current capture to stop.
+- Refresh: manually requests the latest status and packets.
+- Clear results: clears the current records when capture is stopped.
+- Export CSV: downloads the captured rows with timestamps, endpoints, protocol, ports, packet size, TTL and limited payload preview.
+
+TROUBLESHOOTING
+- If the website does not open, check that the original server terminal is still running. Do not close it while using the website.
+- If port 5001 is already in use, close the other app using it or ask for a port-change build.
+- If Start capture reports an Npcap/libpcap error, install Npcap and restart the server.
+- If no packets appear, generate traffic by loading a website in another tab, leave Network Interface blank initially, leave Capture Filter blank, verify Npcap, and run as Administrator if necessary.
+- If the BPF filter is invalid, try the default `ip or ip6 or arp` filter.
+
+SAFETY
+Use this tool only on your own network or with explicit authorization. The app stores packet metadata and only a 48-byte printable payload preview; previews can still contain sensitive information. Do not use it to collect credentials or inspect third-party traffic.

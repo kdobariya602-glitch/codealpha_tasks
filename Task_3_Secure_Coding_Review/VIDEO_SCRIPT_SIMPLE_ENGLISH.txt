@@ -1,0 +1,23 @@
+CODEALPHA TASK 3 — SIMPLE ENGLISH VIDEO SCRIPT
+
+1. TASK 3 OVERVIEW
+This project is a beginner tool that checks source code for some risky patterns. It helps explain possible problems and safer coding choices.
+
+2. START THE APP
+Extract the ZIP. Open the project folder and double-click RUN_WEBSITE_WINDOWS.bat. Wait for the server message, then open http://127.0.0.1:5003 in your browser.
+
+3. START A REVIEW
+Click Start Review and choose Use Built-in Sample. The tool reads the code as text. It does not run the code you submit.
+
+4. UNDERSTAND FINDINGS
+Read each warning, why it matters, and the suggested fix. A pattern match is not proof of a vulnerability. Some warnings may be false positives, and the tool can miss real problems.
+
+5. PRACTICE AND REPORT
+Use Explain This and the practice question. Download the report and review its findings. For an actual security review, record the file, line, impact, evidence, fix, and retest result.
+
+6. IMPORTANT LIMITS
+This is a small educational pattern checker. It does not replace manual review, tests, dependency checks, or a professional static analyzer. Review only code you are allowed to inspect.
+
+7. SUBMISSION TIP
+For the internship report, name the application or sample code you reviewed, document verified findings and remediation, and keep evidence of your tests. Do not claim the demo checker audited an entire application.
+

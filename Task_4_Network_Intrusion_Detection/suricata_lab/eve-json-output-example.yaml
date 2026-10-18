@@ -1,0 +1,15 @@
+# Example EVE JSON output block for a Suricata configuration.
+# Merge the output block into your existing suricata.yaml; do not replace the whole file.
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert:
+            payload: no
+            http: yes
+            dns: yes
+        - flow
+        - dns
+        - http

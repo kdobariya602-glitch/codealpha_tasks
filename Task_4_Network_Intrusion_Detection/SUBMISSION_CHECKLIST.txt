@@ -1,0 +1,12 @@
+TASK 4 SUBMISSION CHECKLIST
+[ ] Run the Flask dashboard
+[ ] Inspect sample alerts and test EVE JSON parser
+[ ] Install/configure Suricata separately in an authorized lab
+[ ] Validate the Suricata configuration
+[ ] Enable EVE JSON output and verify eve.json is generated
+[ ] Test/tune rules and record actual alert evidence
+[ ] Fill the report with real setup and test results
+[ ] Capture screenshots of actual alerts and dashboard parsing
+[ ] Add source files to GitHub repository named CodeAlpha_ProjectName
+[ ] Post your own explanation video on LinkedIn and tag @CodeAlpha
+[ ] Submit using the official form shared by the internship group

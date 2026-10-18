@@ -1,0 +1,11 @@
+TASK 3 SUBMISSION CHECKLIST
+[ ] Run the CodeLens website with RUN_WEBSITE_WINDOWS.bat
+[ ] Review the built-in sample and download a report
+[ ] Open audit_sample/intentionally_vulnerable_training_sample.py
+[ ] Compare each training finding with the source code
+[ ] Fill in actual test/retest details in the report
+[ ] Capture screenshots of findings and remediation explanations
+[ ] Keep the scope clear: the report reviews the included training sample only
+[ ] Add source files to GitHub repository named CodeAlpha_ProjectName
+[ ] Post your own explanation video on LinkedIn and tag @CodeAlpha
+[ ] Submit using the official form shared by the internship group

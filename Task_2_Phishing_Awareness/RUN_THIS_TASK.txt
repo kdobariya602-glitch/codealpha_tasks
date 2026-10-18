@@ -1,0 +1,13 @@
+HOW TO RUN SECUREWISE ULTRA PRO — TASK 2
+
+1. Download the ZIP and select “Extract All”.
+2. Open the extracted folder named Task_2_Phishing_Awareness_Blue_Improved.
+3. Double-click index.html in Chrome, Edge or Firefox.
+4. Explore all sidebar pages, including Email forensics, Identity attack defence and Security decision drills.
+5. Open Video & resources. Play a video in its embedded player or select “Open this video on YouTube” if playback is blocked.
+6. Complete the 35-question final assessment and review each explanation.
+7. Keep index.html, styles.css and script.js together.
+
+Internet is required for remote photos, videos and external resources. Browser-local progress is not synced. Report drafts are generated locally and are not submitted.
+
+This is an educational project only. It does not send emails, collect credentials, scan devices, or detect/block live attacks.

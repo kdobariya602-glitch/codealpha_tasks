@@ -1,0 +1,37 @@
+TASK 2 — PHISHING AWARENESS TRAINING
+Project: SecureWise Ultra PRO
+
+Purpose
+A multi-section cybersecurity awareness website covering phishing, social engineering, identity security, defensive investigation, reporting and scenario-based learning.
+
+Includes
+- Dashboard, phishing email inspection, fake websites/URLs, social engineering and everyday protection.
+- Video/resource library with embedded CISA phishing-awareness videos and direct-open links, plus official FTC/CISA resources.
+- Safe fictional phishing simulation and incident-response playbook.
+- QR phishing, SMS/phone scams, workplace fraud, passwords/MFA, privacy/device safety, scenario practice and glossary/FAQ.
+- AI/deepfake awareness, cloud/collaboration security, mobile security.
+- SOC analyst decision lab, threat-intelligence concepts and local incident-report draft builder.
+- Email forensics, identity attack defence and interactive security decision drills.
+- 35-question scenario-based final assessment with feedback, explanations and retry.
+- Browser-local progress, report export and printable completion certificate.
+
+Technology
+HTML, CSS and vanilla JavaScript. No backend/database required.
+
+Video notes
+- Video embeds require internet access and may be blocked by browser, network or publisher settings.
+- Each featured training video has a direct YouTube link as a fallback.
+- The website cannot guarantee playback if YouTube or a network blocks the content.
+
+Safety and limitations
+- Educational awareness only; not a live phishing detector, SIEM, email filter or production incident-response platform.
+- The simulation uses fictional data; no credentials are collected and no emails are sent.
+- The incident report builder creates local draft text only; it does not submit reports.
+- Progress is stored locally in the browser and is not synced to a server.
+- Never include passwords, MFA codes or unnecessary personal information in report drafts.
+- Follow official organizational security procedures for real incidents.
+
+Run
+1. Extract the ZIP.
+2. Keep index.html, styles.css and script.js together.
+3. Open index.html in a modern browser.

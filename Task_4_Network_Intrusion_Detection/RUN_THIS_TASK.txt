@@ -1,0 +1,22 @@
+TASK 4 — NETWORK INTRUSION DETECTION SYSTEM (SINGLE-FILE VERSION)
+
+FILES
+- app.py: complete Flask app, HTML, CSS, JavaScript, sample EVE JSON and example Suricata rules embedded in one Python file.
+- requirements.txt: Flask dependency.
+- RUN_WEBSITE_WINDOWS.bat: installs Flask and starts the dashboard.
+
+RUN ON WINDOWS
+1. Install Python 3.10+ from https://www.python.org/downloads/windows/ (enable Python on PATH).
+2. Double-click RUN_WEBSITE_WINDOWS.bat.
+3. Open http://127.0.0.1:5004 in a browser.
+4. Click “Load sample alerts” to view synthetic training data.
+5. Paste newline-delimited Suricata EVE JSON in the parser and click “Parse log” to inspect your own log text.
+
+WHAT TO DO FOR THE TASK
+1. Load the built-in examples and inspect timestamp, source/destination, signature and severity.
+2. Paste authorized Suricata EVE JSON logs and parse them.
+3. Explain which alerts need further investigation and why; an alert alone does not prove compromise.
+4. Document your test setup, observed alerts, limitations and conclusions in a short report.
+
+IMPORTANT LIMITATION
+This dashboard does not capture packets, run Suricata, or monitor live network traffic. Built-in alerts are synthetic. Live detection requires installing/configuring Suricata separately, enabling EVE JSON output, and only monitoring networks you are authorized to inspect. Example rules are shown in the page for learning; validate/tune them for your Suricata version and authorized lab.

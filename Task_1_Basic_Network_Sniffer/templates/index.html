@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071629">
+  <title>PacketScope | Basic Network Sniffer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#overview"><span class="brand-icon">P</span><span>Packet<span class="brand-light">Scope</span><small>NETWORK ANALYSIS LAB</small></span></a>
+    <nav class="top-nav" aria-label="Main navigation"><a class="nav active" href="#overview">▦ <span>Dashboard</span></a><a class="nav" href="#capture">⌁ <span>Live Capture</span></a><a class="nav" href="#packets">▤ <span>Packet Explorer</span></a></nav>
+    <div class="top-right"><span class="live-pill"><i></i> LOCAL SESSION</span><span class="avatar">CS</span></div>
+  </header>
+  <main class="main" id="overview">
+    <div class="topbar"><div class="crumb">SECURITY TOOLS <span>/</span> NETWORK SNIFFER <span class="crumb-live">● LIVE MONITORING</span></div></div>
+    <section class="hero"><div><div class="eyebrow"><span class="eyebrow-line"></span> PACKET INSPECTION TOOL</div><h1>Network <em>Sniffer</em></h1><p class="hero-copy">Capture, inspect and analyze authorized network traffic in real time. Monitor endpoints, protocol distribution, packet sizes, ports and a limited payload preview.</p></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core-icon">⌁</div><span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span></div></section>
+    <div class="notice"><span class="notice-icon">!</span><div><b>Authorized use only</b><p>Payload previews are limited to 48 bytes and may contain sensitive text. Use only on your own network or with explicit permission. HTTPS/TLS payloads are encrypted and will not appear as readable text.</p></div></div>
+    <section class="stats" aria-label="Capture statistics">
+      <article class="stat-card"><div class="stat-top"><span>PACKETS CAPTURED</span><span class="stat-icon blue">▤</span></div><div class="stat-value" id="statPackets">0</div><div class="stat-foot">Current capture session</div></article>
+      <article class="stat-card"><div class="stat-top"><span>PROTOCOLS FOUND</span><span class="stat-icon violet">⌘</span></div><div class="stat-value" id="statProtocols">0</div><div class="stat-foot" id="protocolSummary">Waiting for traffic</div></article>
+      <article class="stat-card"><div class="stat-top"><span>DATA OBSERVED</span><span class="stat-icon cyan">⇅</span></div><div class="stat-value" id="statBytes">0 <small>B</small></div><div class="stat-foot">Total packet bytes</div></article>
+      <article class="stat-card"><div class="stat-top"><span>CAPTURE STATUS</span><span class="stat-icon green">◉</span></div><div class="stat-value status-value" id="statState">Ready</div><div class="stat-foot" id="statSub">No active capture</div></article>
+    </section>
+    <section class="panel capture-panel" id="capture">
+      <div class="panel-heading"><div><div class="section-kicker">CONFIGURATION</div><h2>Capture controls</h2><p>Choose the amount of traffic and optional capture interface/filter.</p></div><span class="step-tag">01 / CAPTURE</span></div>
+      <div class="form-grid">
+        <label>PACKET LIMIT <span class="hint">1–500 packets</span><input id="count" type="number" min="1" max="500" value="50"></label>
+        <label>NETWORK INTERFACE <span class="hint">Optional</span><input id="iface" placeholder="e.g. Wi-Fi or Ethernet"></label>
+        <label class="full">CAPTURE FILTER <span class="hint">BPF syntax · Scapy</span><input id="filter" value="" placeholder="Leave blank to capture all packets" spellcheck="false"><span class="field-help">Leave blank to capture all traffic. Examples: <code>tcp</code>, <code>udp</code>, <code>port 53</code>, <code>host 192.168.1.1</code></span></label>
+      </div>
+      <div class="control-row"><div class="button-group"><button class="btn btn-primary" id="start"><span>▶</span> Start capture</button><button class="btn btn-danger" id="stop" disabled><span>■</span> Stop</button><button class="btn btn-outline" id="refresh"><span>↻</span> Refresh</button><button class="btn btn-outline" id="demo"><span>◇</span> Load sample data</button></div><div class="button-group"><button class="btn btn-outline" id="clear"><span>⌫</span> Clear results</button><a class="btn btn-export" id="export" href="/api/export"><span>↓</span> Export CSV</a></div></div>
+      <div class="status-strip" id="statusStrip"><span class="status-indicator"></span><span id="status" role="status" aria-live="polite">Ready. Configure capture settings, then start a session.</span><span class="status-time" id="sessionTime">LOCALHOST</span></div>
+    </section>
+    <section class="panel packet-panel" id="packets">
+      <div class="panel-heading packet-heading"><div><div class="section-kicker">TRAFFIC MONITOR</div><h2>Packet explorer</h2><p>Inspect each observed packet and its basic structure.</p></div><div class="table-count"><span class="count-dot"></span><b id="total">0</b> records</div></div>
+      <div class="table-tools"><div class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search IP, protocol, or packet details..."></div><label class="filter-select"><span>PROTOCOL</span><select id="protocolFilter"><option value="all">All protocols</option><option>TCP</option><option>UDP</option><option>DNS</option><option>ICMP</option><option>ARP</option><option>OTHER</option></select></label><span class="auto-refresh"><i></i> Live refresh · 1s</span></div>
+      <div class="table-wrap"><table><thead><tr><th>TIME</th><th>PROTOCOL</th><th>SOURCE</th><th>DESTINATION</th><th>SIZE</th><th>PACKET DETAILS / PAYLOAD PREVIEW</th></tr></thead><tbody id="rows"><tr><td colspan="6" class="empty-cell"><span class="empty-graphic">⌁</span><b>No packets captured yet</b><small>Start a capture to see live network traffic here.</small></td></tr></tbody></table></div>
+      <div class="table-footer"><span id="showing">Showing 0 packets</span><span>Packet history capped at 1,000 records per session</span></div>
+    </section>
+    <footer><span>PacketScope <b>·</b> CodeAlpha Cyber Security Task 01</span><span>Python · Flask · Scapy</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body></html>

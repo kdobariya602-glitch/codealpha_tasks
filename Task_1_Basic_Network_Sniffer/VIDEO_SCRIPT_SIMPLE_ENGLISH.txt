@@ -1,0 +1,35 @@
+TASK 1 — SIMPLE ENGLISH VIDEO SCRIPT
+
+1. WHAT IS THIS PROJECT?
+This project shows information about network packets going in and out of a computer. We will learn how to run it, read packet details, and save results.
+
+2. STEP 1: INSTALL TOOLS
+Install Python version 3.10 or newer. On Windows, install Npcap too. These tools help the app run and capture packets.
+
+3. STEP 2: EXTRACT THE ZIP
+Right-click the ZIP file and choose Extract All. Open the extracted project folder. You should see app.py and requirements.txt.
+
+4. STEP 3: INSTALL REQUIREMENTS
+Click the folder address bar, type cmd, and press Enter. In Command Prompt, run: py -m pip install -r requirements.txt
+
+5. STEP 4: START THE APP
+Type py app.py and press Enter. Keep this black Command Prompt window open. Open Chrome and visit http://127.0.0.1:5001
+
+6. STEP 5: TRY SAMPLE DATA
+Click Load Sample Data to see how the dashboard works. These rows are examples only. They are not packets captured from your real network.
+
+7. STEP 6: CAPTURE REAL PACKETS
+Leave Capture Filter empty and click Start Capture. Then open a website in another browser tab. Only do this on a network you own or have permission to monitor.
+
+8. STEP 7: READ THE TABLE
+Source IP is the sender. Destination IP is the receiver. Protocol tells you the packet type, such as TCP or UDP. Each row shows information about a packet.
+
+9. STEP 8: FILTER AND EXPORT
+Use Search or the Protocol filter to find packets. Click Stop when finished, then click Export CSV to save the results.
+
+10. IF SOMETHING GOES WRONG
+If no packets appear, check Npcap, the capture interface, and permissions. Try again with the capture filter empty. Never monitor a network without permission.
+
+11. FINISH
+This is an educational project. Before you submit it, test live capture yourself and record your own screen showing real results.
+

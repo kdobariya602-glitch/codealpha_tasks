@@ -1,0 +1,29 @@
+CODEALPHA TASK 1 — BASIC NETWORK SNIFFER
+
+Assignment requirements from the provided CodeAlpha task instructions:
+- Build a Python program to capture network traffic packets.
+- Analyze captured packets to understand their structure and content.
+- Learn how data flows through the network and protocol basics.
+- Use Scapy or socket for packet capturing.
+- Display useful information such as source/destination IPs, protocols and payloads.
+
+Implementation in this website:
+- Python + Flask + Scapy packet capture.
+- Source and destination addresses, protocol, ports, timestamp, packet length and TTL/hop limit.
+- Limited printable payload preview and hexadecimal preview (maximum 48 bytes; no full payload retention).
+- DNS query summary where available.
+- Live-updating packet table, search, protocol filtering, packet count/protocol/byte statistics.
+- Start, stop, manual refresh, clear and CSV export controls.
+- Responsive dashboard interface.
+
+Limitations:
+- Capture depends on Npcap on Windows and suitable privileges.
+- Encrypted HTTPS/TLS payloads remain encrypted.
+- This is a local educational tool, not a production network monitoring system.
+
+
+FILE STRUCTURE
+- app.py: the only Python source file; includes Flask routes, packet capture, packet parsing, and CSV export.
+- templates/index.html: website page.
+- static/style.css and static/app.js: styling and browser interactions.
+- requirements.txt: Python dependencies.

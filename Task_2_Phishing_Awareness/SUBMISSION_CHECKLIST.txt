@@ -1,0 +1,10 @@
+TASK 2 SUBMISSION CHECKLIST
+[ ] Open index.html in a browser
+[ ] Visit each main learning section
+[ ] Test quiz feedback and retry behavior
+[ ] Check video/resource links with internet access
+[ ] Capture genuine screenshots of the working website
+[ ] Fill the report with actual test results
+[ ] Add source files to GitHub repository named CodeAlpha_ProjectName
+[ ] Post your own project explanation video on LinkedIn and tag @CodeAlpha
+[ ] Submit using the official form shared by the internship group
